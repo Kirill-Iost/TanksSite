@@ -4,7 +4,7 @@
 #define MyAppName "Tanks"
 #define MyAppVersion "0.1"
 #define MyAppPublisher "Kirill Iost"
-#define MyAppURL "https://bit.ly/3MLyx3F"
+#define MyAppURL "https://bit.ly/3Mq2gxL"
 #define MyAppExeName "Tanks.exe"
 #define MyAppAssocName MyAppName + ""
 #define MyAppAssocExt ".exe"
