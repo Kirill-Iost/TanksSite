@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>История создания</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Play', sans-serif ;
+        }
+         
+        .header,
+        .wrapper{
+            min-width: 1000px;
+        }
+
+        .timeline{
+            min-width: 1000px;
+            width: 95vw;
+            height: 5px;
+        }
+
+        .timeline-dot{
+            position: relative;
+            top: -5px;
+            width: 15px;
+            height: 15px;
+            content: " ";
+            margin-right: 1rem;
+        }
+        .timeline-text{
+            max-width: 95px;
+            position: relative;
+            top: 15px;
+            left: -25px;
+            margin-right: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="mb-3 header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3" href="index.html">Танчики</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Об игре</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">История создания</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="download.html">Скачать </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+            <div class="timeline my-5 bg-black mx-auto px-2" >   
+                <div class="timeline-dots mx-auto d-flex justify-content-center">     
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#start">Начало проекта</a></div>
+
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#classes">Добавление классов и минимального функционала</a></div>
+
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#bullets">Добавление выстрелов снарядов и система выбора типов танков</a></div>
+                    
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#UI">Начало работы над UI, улучшение анимаций</a></div>
+
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#AI">Добавлеие системы KD, доработка UI, начало работы над ИИ</a></div>
+                        
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#edits">Небольшие правки, добавление бортиков, завершение работы над ИИ</a></div>
+
+                    <div class="timeline-dot bg-dark rounded-5"></div>
+                    <div class="timeline-text"><a class="text-decoration-none text-dark" href="#end">Окончание работы</a></div>
+                </div>
+          </div>
+          <div class="group border" style="margin-top: 15rem;">
+            <div class="card text-center rounded-0 text-bg-light bg-light py-5 border-0" id="start" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Начало проекта</h5>
+                    <p class="card-text">Добавлено множество картинок, увеличенных в 9 раз. Добавлены классы и настройки проекта, в том числе размеры картинок, размеры карты, размеры самой игры и т.д.</p>
+                </div>
+            </div>
+            <div class="card text-center bg-dark text-bg-dark rounded-0 py-5 border-0" id="classes" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Добавление классов и минимального функционала</h5>
+                    <p class="card-text">Сразу после добавления картинок началась работа над игровыми механиками. Были добавлены классы танков и обЪектов, таких как стены, неразрушимые стены, база игрока, а также кусты, за которыми танк может спрятаться. В последствии система объектов будет переработана.</p>
+                </div>
+            </div>
+            <div class="card text-center rounded-0 text-bg-light bg-light py-5 border-0" id="bullets" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Добавлены выстрелы снарядов и система выбора типа танка</h5>
+                    <p class="card-text">Одна из основных механик - выстрелы. Благодаря "методу тыка" была найдена универсальная точка для вылета снаряда танка. В этой точке у всех типов танков заканчивалось дуло. Также каждому типу танка был присвоен свой номер, благодаря которому можно было выбрать интересующий тебя танк. Все танки на данном этапе отличались только внешним видом.</p>
+                </div>
+            </div>
+            <div class="card text-center bg-dark text-bg-dark rounded-0 py-5 border-0" id="UI" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Начало работы над UI, улучшение анимаций</h5>
+                    <p class="card-text">Как только основные игровые механики были проработанны (кроме ботов), началась работа над UI, в частности над стартовым меню, меню выбора типа танка, меню выбора карты, меню паузы, экрана проигрыша и отображением информации, такой как оставшееся время до конца раунда, количество жизней, количество возрождений, количество жизней у базы. Были улучшены анимации движения, возрждения, взрыва объектов (в том числе и танков).</p>
+                </div>
+            </div>
+            <div class="card text-center rounded-0 text-bg-light bg-light py-5 border-0" id="AI" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Добавлена система KD, доработан UI, начало работы над ИИ</h5>
+                    <p class="card-text">Был исправлен серьёзный баг. Благодаря ему можно было бесконечно стрелять, поэтому была добавлена система KD. Было доработано меню паузы и выбора карты (для этого пришлось их создать). В это же время была начата работа над созданием ИИ.</p>
+                </div>
+            </div>
+            <div class="card text-center bg-dark text-bg-dark rounded-0 py-5 border-0" id="edits" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Небольшие правки, добавление бортиков, завершение работы над ИИ</h5>
+                    <p class="card-text">Были внесены небольшие правки в проект, а именно: доработаны анимации, убраны баги, оптимизирован код. В это время мы начали обучать ИИ. Также были добавлены бортики, для того чтобы танк не мог уехать за пределы экрана.</p>
+                </div>
+            </div>
+            <div class="card text-center rounded-0 text-bg-light bg-light py-5 border-0" id="end" style="min-height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Окончание работы</h5>
+                    <p class="card-text">Финальная стадия работы. Оптимизация кода, улучшение его читабельности, финальная доработка багов, внедрение обученного ИИ, создание презентации для защиты.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
